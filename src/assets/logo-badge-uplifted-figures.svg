@@ -1,0 +1,32 @@
+<svg width="320" height="320" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Dahiriah Youth Association circular badge</title>
+<desc>A circular badge with three abstract raised figures in terracotta, ochre, and olive at the center, encircled by the organization's name and tagline along a ring border.</desc>
+
+<circle cx="160" cy="160" r="150" fill="none" stroke="#2B2925" stroke-width="4"/>
+<circle cx="160" cy="160" r="132" fill="none" stroke="#2B2925" stroke-width="2"/>
+
+<path id="topArc" d="M 55 160 A 105 105 0 0 1 265 160" fill="none"/>
+<text font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#2B2925" letter-spacing="2">
+  <textPath href="#topArc" startOffset="50%" text-anchor="middle">DAHIRIAH YOUTH ASSOCIATION</textPath>
+</text>
+
+<path id="botArc" d="M 265 160 A 105 105 0 0 1 55 160" fill="none"/>
+<text font-family="Arial, sans-serif" font-size="14" font-weight="400" fill="#5C6B47" letter-spacing="1.5">
+  <textPath href="#botArc" startOffset="50%" text-anchor="middle">ACCESS • DIGNITY • INDEPENDENCE</textPath>
+</text>
+
+<g stroke-linecap="round" fill="none">
+  <path d="M 130 210 L 130 165 L 118 130" stroke="#C7623F" stroke-width="10"/>
+  <path d="M 130 165 L 142 130" stroke="#C7623F" stroke-width="10"/>
+  <circle cx="130" cy="112" r="14" fill="#C7623F"/>
+
+  <path d="M 160 215 L 160 150 L 143 100" stroke="#D9A441" stroke-width="11"/>
+  <path d="M 160 150 L 177 100" stroke="#D9A441" stroke-width="11"/>
+  <circle cx="160" cy="80" r="16" fill="#D9A441"/>
+
+  <path d="M 190 210 L 190 165 L 202 130" stroke="#5C6B47" stroke-width="10"/>
+  <path d="M 190 165 L 178 130" stroke="#5C6B47" stroke-width="10"/>
+  <circle cx="190" cy="112" r="14" fill="#5C6B47"/>
+</g>
+
+</svg>
