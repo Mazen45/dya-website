@@ -1,6 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-
+import activity1 from "/src/assets/activity1.jpeg";
+import activity2 from "/src/assets/activity2.jpeg";
+import activity3 from "/src/assets/activity3.jpeg";
+import img from "/src/assets/img.jpeg";
 function Body() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.dir() === "rtl";
@@ -12,7 +15,7 @@ function Body() {
 
       <div className="hero" role="img" aria-label={t("hero-alt", "صورة فريق جمعية شباب البلد")}>
         <img
-          src="src/assets/img.jpeg"
+                  src={ img}
           alt=""
           aria-hidden="true"
           style={{
@@ -100,21 +103,21 @@ function Body() {
         <ul className="gallery">
           <li className="gallery-item">
             <img
-              src="src/assets/activity1.jpeg"
+              src={activity1}
               alt="نشاط تدريبي للأشخاص ذوي الإعاقة"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </li>
           <li className="gallery-item">
             <img
-              src="src/assets/activity2.jpeg"
+                          src={ activity2}
               alt="ورشة توعية مجتمعية"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </li>
           <li className="gallery-item">
             <img
-              src="src/assets/activity3.jpeg"
+              src={activity3}
               alt="فعالية دمج مجتمعي"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
