@@ -425,7 +425,6 @@ h2{
   overflow:hidden;
   margin-bottom:40px;
   aspect-ratio: 16 / 6;
-  min-height: 200px;
   max-height: 400px;
   display:flex;
   align-items:flex-end;
@@ -545,6 +544,10 @@ h2{
 @media (max-width: 545px) {
   main {
     padding: 25px 20px 50px;
+  }
+
+  .hero {
+    aspect-ratio: 4 / 3;
   }
 
   .cards {
