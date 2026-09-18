@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_TEL } from "../siteInfo.js";
 
 
 export default function Footer() {
@@ -8,26 +9,27 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-brand">
-                  <h3>{ t("title")}</h3>
+                  <h2>{ t("title")}</h2>
                   <p>{ t("slogan")}</p>
         </div>
 
-        <nav className="footer-links">
+        <nav className="footer-links" aria-label={t("footer-nav-label")}>
                   <a href="#about">{ t("About-header")}</a>
                   <a href="#goals">{ t("goals-title")}</a>
+                  <a href="#programs">{ t("programs-title")}</a>
                   <a href="#activities">{ t("activities")}</a>
                   <a href="#contact">{ t("call")}</a>
         </nav>
 
         <div className="footer-contact">
-          <p>الظاهرية، فلسطين</p>
-          <p dir="ltr">+970 XX XXX XXXX</p>
-          <p>info@example.org</p>
+          <p>{t("location")}</p>
+          <p dir="ltr"><a href={`tel:${CONTACT_PHONE_TEL}`}>{CONTACT_PHONE_DISPLAY}</a></p>
+          <p dir="ltr"><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a></p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} جمعية شباب البلد. جميع الحقوق محفوظة.</p>
+        <p>© {new Date().getFullYear()} {t("title")}. {t("rights-reserved")}</p>
       </div>
     </footer>
   );
